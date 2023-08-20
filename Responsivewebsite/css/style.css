@@ -1,0 +1,232 @@
+/*  CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/*CSS Variables*/
+:root {
+  --navbar-height: 59px;
+}
+
+/*Navigation bar*/
+#navbar {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0px;
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+
+/*Navigation Bar : Logo and Image*/
+#logo {
+  margin: 10px 26px;
+}
+
+#logo img {
+  height: 52px;
+  width: 52px;
+  margin: 5px 9px;
+}
+/*Navigation Bar : List Styling*/
+
+#navbar ul {
+  display: flex;
+  font-family: "Baloo Bhaina 2", cursive;
+}
+
+#navbar ul li {
+  /*color: white;*/
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Home Section */
+
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 170px;
+  height: 527px;
+  justify-content: center;
+  align-items: center;
+}
+
+#home::before {
+  content: "";
+  background: url(../Img/youtube-banner-gdf2682aa3_1280.jpg) no-repeat center
+    center/cover;
+  position: absolute;
+  height: 600px;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+
+#home h1 {
+  color: yellow;
+  text-align: center;
+  font-family: "Bree Serif", serif;
+}
+#home p {
+  color: rgb(28, 3, 3);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Bree Serif", serif;
+}
+
+/*Service Section*/
+#services {
+  margin: 30px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid brown;
+  padding: 34px;
+  margin: 20px 30px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+}
+#services .box img {
+  height: 150px;
+  display: block;
+  margin: auto;
+}
+#services .box p {
+  font-family: "Bree Serif", serif;
+}
+
+/*Client Section */
+
+#client-section {
+  height: 300px;
+}
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("../Img/pexels-jane-doan-1099680.jpg") no-repeat center
+    center/cover;
+  width: 100%;
+  height: 37%;
+  z-index: -1;
+  opacity: 0.6;
+}
+
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.client-item {
+  padding: 34px;
+}
+
+#clients img {
+  height: 120px;
+}
+
+/*Contact Section*/
+#contact {
+  position: relative;
+}
+
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
+  background: url("/Img/contact2.jpg") no-repeat center center/cover;
+}
+
+#contact-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 34px;
+}
+#contact-box input,
+#contact-box textarea {
+  border-radius: 10px;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 1.1rem;
+}
+
+#contact-box form {
+  width: 40%;
+}
+
+#contact-box form {
+}
+
+#contact-box label {
+  font-family: "Bree Serif", serif;
+  font-size: 1.3rem;
+}
+/*Footer */
+footer {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+}
+
+/* Utility Classes */
+
+.h-primary {
+  font-family: "Bree Serif", serif;
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 12px;
+}
+
+.h-secondary {
+  font-family: "Bree Serif", serif;
+  text-align: center;
+  font-size: 2rem;
+  padding: 12px;
+}
+
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 16px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.center {
+  text-align: center;
+}
